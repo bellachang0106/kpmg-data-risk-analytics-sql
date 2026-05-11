@@ -21,11 +21,12 @@ graph TD
     style B fill:#e1f5fe,stroke:#01579b
     style H fill:#deff9a,stroke:#333
 
+```
 
+## 💻 Technical Showcase: Identifying Anomalies
+*This sample logic demonstrates how I isolate specific risk patterns from large datasets to prepare for audit reporting.*
 
-
-
-
+```sql
 -- Identifying potential "Structuring" or High-Volume anomalies for the risk report
 SELECT 
     Account_ID, 
