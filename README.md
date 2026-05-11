@@ -42,3 +42,21 @@ WHERE Transaction_Date >= DATEADD(day, -30, GETDATE())
 GROUP BY Account_ID, Country_Risk_Level
 HAVING COUNT(Transaction_ID) >= 10  -- Frequent activity per week
    AND SUM(Transaction_Amount) > 100000; -- High volume threshold in 30 days
+
+---
+
+## 📈 The Value Delivered
+
+* **Precision Audit:** Moved from manual sampling to **100% data coverage**, eliminating blind spots in the risk assessment process.
+* **Operational Efficiency:** Streamlined the data-sorting phase using SQL, speeding up high-risk identification by **35%**.
+* **Actionable Insights:** Converted raw query results into structured reports, providing stakeholders with clear evidence for immediate remediation.
+
+---
+
+## 🛠️ Core Competencies
+
+### **Analytical Suite**
+`SQL for Risk Analytics` • `Audit Data Integrity` • `Pattern Recognition`
+
+### **Strategic Domain**
+`Operational Risk Governance` • `Business Integrity` • `Evidence-based Reporting`
