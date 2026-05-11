@@ -10,16 +10,17 @@ My approach focuses on translating complex business risks into precise SQL queri
 
 ```mermaid
 graph TD
-    A[(Raw Database<br/>100k+ Records)] --> B[<b>Data Selection</b><br/>Refining Scope via SQL]
-    B --> C{<b>Investigation Filters</b>}
-    C -- "Velocity" --> D[Identifying Rapid Transaction Spikes]
-    C -- "Inconsistency" --> E[Cross-referencing Entity Data Errors]
-    C -- "Threshold" --> F[Detecting Unusual Transaction Volumes]
-    D & E & F --> G[<b>Deep-Dive Forensic Analysis</b>]
-    G --> H["📝 <b>Risk Audit Report</b><br/>Evidence-based Findings"]
+    A[(Raw Data Bank)] --> B[<b>Apply SQL Filters</b>]
+    
+    B --> C1[Check: High Frequency]
+    B --> C2[Check: Large Amounts]
+    B --> C3[Check: High-Risk Regions]
+    
+    C1 & C2 & C3 --> D[Detailed Investigation]
+    D --> E["📝 <b>Final Risk Report</b>"]
 
     style B fill:#e1f5fe,stroke:#01579b
-    style H fill:#deff9a,stroke:#333
+    style E fill:#deff9a,stroke:#333
 
 ```
 
