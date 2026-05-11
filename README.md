@@ -42,7 +42,7 @@ WHERE Transaction_Date >= DATEADD(day, -30, GETDATE())
 GROUP BY Account_ID, Country_Risk_Level
 HAVING COUNT(Transaction_ID) >= 10  -- Frequent activity per week
    AND SUM(Transaction_Amount) > 100000; -- High volume threshold in 30 days
-
+```
 ---
 
 ## 📈 The Value Delivered
